@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style.css" />
+    <title>Try not hammer yourself lol</title>
+  </head>
+  <body>
+    <audio id="misuc" src="./audio/background.mp3" loop></audio>
+
+    <h1>Try Not Hammer Yourself</h1>
+
+    <div id="summary">
+      <h2>Score : <span id="score">0</span></h2>
+      <h2>Level : <span id="level">1</span></h2>
+    </div>
+    <div id="board">
+      <section class="pop hidden">
+        <h1>GAME OVER</h1>
+        <p>Your Finnal Score is : <h1 class="final">0</h1></p>
+        <button id="start" onClick="window.location.reload();">Restart</button>
+      </section>
+    </div>
+    <div id="instructions">
+      <p>Customize game by uploading image at any time</p>
+      <p>
+        <strong><i>NOTE : </i></strong
+        >File must be in PNG format
+      </p>
+      <a href="#">Click HERE to convert your img to PNG and remove your image background</a
+      >
+    </div>
+    <div id="uploads">
+      <div>
+        <label for="enemy">Change Enemy</label>
+        <input type="file" id="enemy" name="enemy" accept="image/png" />
+      </div>
+      <div>
+        <label for="player">Change Player</label>
+        <input type="file" id="player" name="player" accept="image/png" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

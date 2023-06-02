@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Sigmar&family=Yatra+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  background: url("./image/background.png");
+}
+
+body {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2%;
+  height: 100vh;
+  width: auto;
+  overflow: hidden;
+}
+
+h1 {
+  color: #fefefe;
+  font-family: "Sigmar", cursive;
+  -webkit-text-stroke: 1px black;
+
+  font-size: 56px;
+}
+h2 {
+  color: #fefefe;
+  font-size: 36px;
+  margin: 10px;
+}
+
+p,
+a {
+  color: #fefefe;
+}
+
+a:hover {
+  color: red;
+}
+
+#board {
+  width: 720px;
+  height: 720px;
+  background: url("./image/soil.png");
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-size: cover;
+  border: 3px solid #fefefe;
+  border-radius: 25px;
+  cursor: url("./image/hammerup.png"), auto;
+  overflow: hidden;
+}
+
+.pop {
+  background: rgba(0, 0, 0, 0.7);
+  width: 720px;
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: not-allowed;
+  position: absolute;
+  border-radius: 25px;
+}
+
+.pop h1 {
+  font-size: 68px;
+  font-family: "Yatra One", cursive;
+  letter-spacing: 10px;
+}
+
+.pop p {
+  font-size: 25px;
+  z-index: 10;
+}
+
+#board div {
+  width: 180px;
+  height: 180px;
+  background-image: url("./image/pipe.png");
+  background-size: cover;
+}
+
+#board div img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+
+  margin-top: -1em;
+  padding-top: 1em;
+  transition: scale 0.2s;
+}
+
+#summary {
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  margin: 20px;
+  font-size: 26px;
+}
+
+#uploads {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+label {
+  color: #fefefe;
+  margin-right: -8px;
+}
+
+input {
+  background-color: #fefefe;
+  display: inline-block;
+  border-radius: 12px;
+}
+
+button {
+  padding: 10px 20px;
+  width: 30%;
+  letter-spacing: 4px;
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
+  font-size: 26px;
+  border: none;
+  border-radius: 12px;
+  background: #ded9d9;
+  color: #333;
+}
+
+button:hover {
+  background: white;
+  cursor: pointer;
+}
+button:active {
+  background: rgb(214, 212, 212);
+}
+
+@media screen and (max-width: 750px) {
+  #board {
+    width: 540px;
+    height: 540px;
+  }
+  #board div {
+    width: 135px;
+    height: 135px;
+  }
+  #board div img {
+    width: 75px;
+    height: 75px;
+  }
+  h1 {
+    color: #fefefe;
+    font-size: 36px;
+  }
+  h2 {
+    color: #fefefe;
+    font-size: 18px;
+  }
+  .pop {
+    width: 540px;
+    height: 540px;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
