@@ -62,7 +62,7 @@ a:hover {
   border: 3px solid #fefefe;
   border-radius: 25px;
   cursor: url("./image/hammerup.png"), auto;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .pop {
